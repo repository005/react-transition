@@ -28,7 +28,7 @@ class Fade extends Component{
                     </div>
                 </CSSTransition>
                
-               <button onClick={this.showDiv} class="showDiv">ShowDiv</button>
+               <button onClick={this.showDiv} className="showDiv">ShowDiv</button>
             </div>
         )
     }

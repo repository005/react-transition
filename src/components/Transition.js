@@ -10,7 +10,7 @@ class TransitionComp extends Component{
 
     showDiv = () => {
         this.setState({
-            show:!this.state.show ? true:false 
+            show:!this.state.show
         })
     }
 
