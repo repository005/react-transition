@@ -12,12 +12,24 @@ class User extends Component {
     spanish: false,
     message() {console.log('hey')},
     car: {brand: 'Ford', model: 'Focus'},
-    mother: 'Jane'
+    mother: 'Martha',
+    color: 'red'
+  }
+  
+  changeColor = () => {
+    this.refs.myColor.style.color = 'blue';
   }
 
   render() {
+
+    const style = {
+      color: this.state.color
+    }
+
     return (
       <div>
+        <h4 ref="myColor" style={style}>{this.state.mother}</h4>
+        <div onClick={()=>this.changeColor()}>Change Color</div>
         <UserTemplate {...this.state}/>
       </div>
     );
