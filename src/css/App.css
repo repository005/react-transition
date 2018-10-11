@@ -82,21 +82,21 @@
   transition: all 1s ease;
 }
 
-.square.square-entering {
+.square-entering {
   opacity: 1;
   transform: translateX(0%);
 }
 
-.square.square-entered {
+.square-entered {
   background: blue;
 
 }
 
-.square.square-exiting {
+.square-exiting {
   background: green;
 }
 
-.square.square-exited {
+.square-exited {
   opacity: 0;
   transform: translateX(-100%);
 }
